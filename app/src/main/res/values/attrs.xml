@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 线性布局的指示器-->
+    <declare-styleable name="JitHCircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+    </declare-styleable>
+    <!-- View指示器-->
+    <declare-styleable name="JumpCPagerIndicator">
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="circleStroke" format="dimension"/>
+        <attr name="circleDivide" format="dimension"/>
+        <attr name="circleFillColor" format="color"/>
+        <attr name="circleEmptyColor" format="color"/>
+    </declare-styleable>
+</resources>

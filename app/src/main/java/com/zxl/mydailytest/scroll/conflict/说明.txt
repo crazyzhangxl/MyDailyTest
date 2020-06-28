@@ -1,0 +1,4 @@
+
+滑动冲突:
+
+scrollView 嵌套listView....

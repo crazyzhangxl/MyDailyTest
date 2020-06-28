@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="city">
+        <item>北京</item>
+        <item>上海</item>
+        <item>南京</item>
+    </array>
+
+    <array name="speed">
+        <item>低速</item>
+        <item>中速</item>
+        <item>高速</item>
+    </array>
+</resources>

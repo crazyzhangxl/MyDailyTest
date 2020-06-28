@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".scroll.conflict.ConflictAActivity">
+    <TextView
+        android:text="解决ScrollView与ListView冲突"
+        android:textAllCaps="false"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.zxl.mydailytest.scroll.conflict.IMyScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/color_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"/>
+            </LinearLayout>
+            <com.zxl.mydailytest.scroll.conflict.ConflictListView
+                android:overScrollMode="never"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="1px"
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.zxl.mydailytest.scroll.conflict.ConflictListView>
+        </LinearLayout>
+
+    </com.zxl.mydailytest.scroll.conflict.IMyScrollView>
+</LinearLayout>

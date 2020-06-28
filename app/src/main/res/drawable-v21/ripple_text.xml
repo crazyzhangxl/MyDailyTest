@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+android:color="#f00">
+
+<!-- 加不加Item是由区别的
+     如果没Item的话默认的是无边界的,也就是一个圆形的效果;
+     而如果加了item的背景颜色,那么初始话就是该颜色;紧接着由长按水波纹的颜色进行初始颜色的回复
+     且有了Item 是由边界的了
+-->
+<item android:drawable="@color/white" />
+</ripple>

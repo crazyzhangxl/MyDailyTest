@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxl.mydailytest.com.zxl.mydailytest.LocationActivity">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/ivControl"
+            android:src="@drawable/ctrlfan_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/shape_turn_left" />
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/shape_turn_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/ivTop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shape_turn_top"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivBottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shape_turn_bottom"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

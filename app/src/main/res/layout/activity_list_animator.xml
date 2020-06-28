@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".state_list_animator.ListAnimatorActivity">
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:button="@drawable/selector_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@drawable/selector_checkbox"/>
+
+    <Button
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="120dp"
+        android:text="是有阴影的按钮咯"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/layer_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

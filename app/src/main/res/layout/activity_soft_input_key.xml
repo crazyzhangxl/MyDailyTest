@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:text="标题"
+        android:gravity="center_vertical"
+        android:background="#0f0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </TextView>
+    <Button
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:text="登录"
+        android:background="@color/color_red"
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <ScrollView
+        android:layout_below="@id/title"
+        android:layout_above="@id/btnSubmit"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/etAccount"
+                android:hint="请输入账号"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:gravity="right"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/etAccount"
+                android:hint="请输入密码"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

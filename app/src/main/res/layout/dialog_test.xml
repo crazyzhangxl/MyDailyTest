@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@drawable/wb_sift_shadow_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@id/TransitionDialogBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="200dp">
+            <TextView
+                android:text="你是谁"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

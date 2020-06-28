@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbars"
+        android:scrollbarSize="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_marginTop="50dp"
+                android:background="#0f0"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <View
+                android:layout_marginTop="50dp"
+                android:background="#00f"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <View
+                android:layout_marginTop="50dp"
+                android:background="#f00"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <View
+                android:layout_marginTop="50dp"
+                android:background="#0f0"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--<LinearLayout-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/linear"-->
+        <!--android:background="#ff0000"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<RelativeLayout-->
+            <!--android:paddingBottom="24dp"-->
+            <!--android:id="@+id/rlTitle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp">-->
+            <!--<TextView-->
+                <!--android:text="你好"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<com.zxl.mydailytest.views.TestTouchView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<com.kyleduo.switchbutton.SwitchButton-->
+        <!--android:id="@+id/sb_text_state"-->
+        <!--style="@style/SwitchButtonStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="16dp"-->
+        <!--app:kswTextAdjust="-2dp"-->
+        <!--app:kswTextExtra="8dp"-->
+        <!--app:kswTextOff="关"-->
+        <!--app:kswTextOn="开"-->
+        <!--/>-->
+
+    <!--<com.kyleduo.switchbutton.SwitchButton-->
+        <!--android:id="@+id/switchButton"-->
+        <!--style="@style/SwitchButtonStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:kswAnimationDuration="300"-->
+        <!--android:checked="false"-->
+        <!--app:kswBackDrawable="@drawable/ios_back_drawable"-->
+        <!--app:kswThumbDrawable="@drawable/ios_thumb_selector"-->
+        <!--app:kswThumbMarginBottom="-8dp"-->
+        <!--app:kswThumbMarginLeft="-5dp"-->
+        <!--app:kswThumbMarginRight="-5dp"-->
+        <!--app:kswThumbMarginTop="-2.5dp"-->
+        <!--app:kswThumbRangeRatio="1.4"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="14sp"-->
+        <!--app:kswTextAdjust="-8dp"-->
+        <!--app:kswTextExtra="4dp"-->
+        <!--app:kswTextOff="关"-->
+        <!--app:kswTextOn="开"/>-->
+    <!--<com.zxl.mydailytest.timer.CountingTimerView-->
+        <!--android:id="@+id/timer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+</LinearLayout>

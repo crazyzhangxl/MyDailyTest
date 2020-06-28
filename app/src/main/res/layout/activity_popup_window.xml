@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PopupWindowActivity">
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnShow"
+            android:text="弹出pop"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:id="@+id/sampleEasy"
+        android:text="一般弹出"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/rlShow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="666"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

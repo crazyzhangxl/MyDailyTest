@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:id="@+id/home_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/home_edit_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" android:layout_alignParentTop="true">
+        <Button android:textSize="12sp"
+            android:textColor="#ff666666" android:gravity="center"
+            android:id="@+id/searcherDoSearcherButton" android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="取消"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+        <!-- 相对布局 设置布局位于特定的控件左边 通过显示隐藏来设置可见 高手啊-->
+        <RelativeLayout android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="6.0dip"
+            android:layout_marginBottom="6.0dip"
+            android:background="@drawable/drawable_search"
+            android:layout_toLeftOf="@id/searcherDoSearcherButton">
+            <ImageView
+                android:id="@+id/search_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:src="@mipmap/ic_search"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            <ImageButton android:id="@+id/search_del_btn"
+                android:background="@mipmap/ic_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <EditText android:textSize="12sp"
+                android:textColor="#ff373737"
+                android:id="@+id/searcherInputEditText"
+                android:background="@null"
+                android:paddingLeft="5.0dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:hint="请输入城市名称进行查询"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:layout_toLeftOf="@id/search_del_btn"
+                android:layout_toRightOf="@id/search_check"
+                android:layout_centerVertical="true"
+                android:imeOptions="actionDone" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/home_edit_search_layout">
+        <ListView
+            android:id="@+id/searcherAutoList"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".indicator.IndicatorActivity">
+    <RadioGroup
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:button="@null"
+            android:text="是"
+            android:checked="false"
+            android:background="@drawable/drawable_selector_left"
+            android:textColor="@color/text_radio_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#3000"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:checked="false"
+            android:id="@+id/rb2"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:button="@null"
+            android:text="否"
+            android:background="@drawable/drawable_selector_right"
+            android:textColor="@color/text_radio_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <com.zxl.mydailytest.views.WubaTownRadioGroup
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:id="@+id/city_hot_tab"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:textSize="14sp"
+            android:id="@+id/city"
+            android:textColor="@color/city_hot_tab_text_color"
+            android:gravity="center"
+            android:background="@drawable/city_left_bg"
+            android:layout_width="80dp"
+            android:layout_height="29dp"
+            android:button="@null"
+            android:text="城市" />
+
+        <RadioButton android:textSize="14sp"
+            android:id="@+id/town"
+            android:textColor="@color/city_hot_tab_text_color"
+            android:gravity="center"
+            android:background="@drawable/city_center_bg"
+            android:layout_width="80dp"
+            android:layout_height="29dp"
+            android:button="@null"
+            android:text="乡镇" />
+
+        <RadioButton android:textSize="14sp"
+            android:id="@+id/country"
+            android:textColor="@color/city_hot_tab_text_color"
+            android:gravity="center"
+            android:background="@drawable/city_right_bg"
+            android:layout_width="80dp"
+            android:layout_height="29dp"
+            android:button="@null"
+            android:text="海外" />
+    </com.zxl.mydailytest.views.WubaTownRadioGroup>
+
+    <com.zxl.mydailytest.wuba.JitHCircleIndicator
+        android:visibility="visible"
+        android:id="@+id/circleIndicator"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ci_animator="@animator/indicator_animator"
+        app:ci_animator_reverse="@animator/indicator_animator_reverse"
+        app:ci_drawable="@drawable/black_radius_square"
+        app:ci_height="4dp"
+        app:ci_margin="6dp"
+        app:ci_width="10dp">
+    </com.zxl.mydailytest.wuba.JitHCircleIndicator>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/rgMain"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textColor="@color/text_radio_color"
+                android:id="@+id/rbAc1"
+                android:gravity="center"
+                android:text="活动1"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:textColor="@color/text_radio_color"
+                android:id="@+id/rbAc2"
+                android:gravity="center"
+                android:text="活动2"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:textColor="@color/text_radio_color"
+                android:id="@+id/rbAc3"
+                android:gravity="center"
+                android:text="活动3"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp">
+            <ImageView
+                android:id="@+id/imageIndicator"
+                android:background="@drawable/shape_linear"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+<!--
+    自定义的属性 假若不写 那么是默认的原点
+    app:ci_animator="@animator/indicator_animator"
+    app:ci_animator_reverse="@animator/indicator_animator_reverse"
+    app:ci_drawable="@drawable/black_radius_square"
+    app:ci_height="4dp"
+    app:ci_margin="6dp"
+    app:ci_width="10dp"-->
+
+    <com.zxl.mydailytest.wuba.JumpCPagerIndicator
+        android:visibility="visible"
+        android:id="@+id/jumpIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:circleDivide="15dp"
+        app:circleEmptyColor="#66000000"
+        app:circleFillColor="#ff0000"
+        app:circleRadius="5dp"
+        app:circleStroke="3dp"/>
+    <com.zxl.mydailytest.wuba.ViewPagerEx
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.zxl.mydailytest.wuba.ViewPagerEx>
+</LinearLayout>

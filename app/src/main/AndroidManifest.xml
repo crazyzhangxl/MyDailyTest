@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxl.mydailytest">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name="com.zxl.mydailytest.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".toast.ToastActivity" />
+        <activity android:name=".rxjava.RxLearnActivity" />
+        <activity android:name=".permission.ReviewPermissionActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".display.DisplayActivity" />
+        <activity android:name=".multi_thread.handler_thread.HandlerThreadActivity" />
+        <activity android:name=".multi_thread.asyncTask.AsyncTaskActivity" />
+        <activity
+            android:name=".spannable.SpannableSbActivity"
+            android:label="SpannableStringBuilder" />
+        <activity android:name=".layer.LayerActivity" />
+        <activity android:name=".viewpager.ViewPagerOneActivity" />
+        <activity android:name=".scroll.conflict.ConflictBActivity" />
+        <activity android:name=".scroll.conflict.ConflictAActivity" />
+        <activity android:name=".test.Test2Activity" />
+        <activity android:name=".webview.Main2Activity" />
+        <activity android:name=".webview.GoodWebActivity" />
+        <activity android:name=".webview.WebViewActivity" />
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 首个加载的活动设置特定的样式 -->
+        <activity android:name=".ipc.service.ServiceActivity" />
+        <activity android:name=".ipc.HandlerRunActivity" />
+
+        <activity android:name=".ipc.HandlerMsgActivity" />
+
+        <activity android:name=".ipc.HandlerUserActivity" />
+        <activity android:name=".activities.launch_mode.LaunchBActivity" />
+        <activity android:name=".activities.launch_mode.LaunchAActivity" /> <!-- 初始化容器的 content provider -->
+        <activity android:name=".activities.fragment.FgActivity" />
+
+        <activity android:name="com.zxl.mydailytest.MainActivity" />
+        <activity
+            android:name="com.zxl.mydailytest.JingActivity"
+            android:theme="@style/JingTheme" />
+        <activity android:name="com.zxl.mydailytest.TableActivity" />
+        <activity android:name=".scroll.MyScrollActivity" />
+        <activity android:name="com.zxl.mydailytest.ScrollTestActivity" />
+        <activity android:name=".scroll.conflict.ConflictActivity" />
+        <activity android:name=".scroll.ViewDispatchActivity" />
+        <activity android:name="com.zxl.mydailytest.LocationActivity">
+
+            <!-- 案例5 -->
+            <intent-filter>
+                <action android:name="com.zxl.test" />
+                <action android:name="com.zxl.location" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.zxl.filter" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 又增加一个category -->
+                <category android:name="com.zxl.category" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zxl.mydailytest.SoftInputKeyActivity" />
+        <activity android:name="com.zxl.mydailytest.ChartsActivity" />
+        <activity android:name="com.zxl.mydailytest.ChartMGActivity" />
+        <activity
+            android:name=".views.RetrofitNetActivity"
+            android:theme="@style/picture_theme" />
+        <activity android:name=".activities.EditTextActivity" />
+        <activity android:name=".activities.colorFliter.ImageFilterActivity" />
+        <activity
+            android:name=".task.ActivityA"
+            android:label="scrollView小技巧" />
+        <activity android:name=".task.ActivityB" />
+        <activity android:name=".task.ActivityC" />
+        <activity android:name=".task.ActivityD" />
+        <activity android:name=".activities.fragment.FragmentActivity" />
+        <activity android:name=".state_list_animator.ListAnimatorActivity" />
+        <activity android:name="com.zxl.mydailytest.AnimationActivity" />
+        <activity android:name=".indicator.IndicatorOneActivity" />
+        <activity android:name=".indicator.IndicatorActivity" />
+        <activity android:name="com.zxl.mydailytest.MyTabActivity" />
+        <activity android:name="com.zxl.mydailytest.CheckBoxActivity" />
+        <activity
+            android:name=".recycle.RecyclerActivity"
+            android:label="局部刷新案例学习" />
+        <activity android:name=".activities.fragment.NormalFgActivity" />
+        <activity android:name=".activities.IntentFtActivity" />
+        <activity android:name=".activities.PopupWindowActivity" />
+        <activity android:name=".activities.grid.GridActivity" />
+        <activity android:name=".activities.InflateActivity" />
+        <activity android:name=".activities.background.BgActivity" />
+        <provider
+            android:name=".provider.InitProvider"
+            android:authorities="com.zxl.init"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".multi_thread.InitService"
+            android:exported="false" />
+        <service
+            android:name=".ipc.service.RemoteService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.zxl.service.remote" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

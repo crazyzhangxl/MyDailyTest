@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".multi_thread.handler_thread.HandlerThreadActivity">
+    <TextView
+        android:id="@+id/tvResult"
+        android:gravity="center"
+        android:text="结果显示区域"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <Button
+        android:id="@+id/btnActionOne"
+        android:text="2s刷新数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
